@@ -204,7 +204,7 @@
         <module>ruoyi-common</module>
     </modules>
     <packaging>war</packaging>
-    <artifactId>ruoyi-admin</artifactId>			
+    	<artifactId>ruoyi-admin</artifactId>			
 
 
     <dependencies>
