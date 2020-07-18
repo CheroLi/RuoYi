@@ -191,6 +191,18 @@
                 <artifactId>ruoyi-common</artifactId>
                 <version>${ruoyi.version}</version>
             </dependency>
+	    
+            <!-- 多模块排除内置tomcat -->
+            <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-web</artifactId>
+	        <exclusions>
+		    <exclusion>
+	                <groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+		    </exclusion>
+	        </exclusions>
+            </dependency>
 
         </dependencies>
     </dependencyManagement>
@@ -204,8 +216,6 @@
         <module>ruoyi-common</module>
     </modules>
     <packaging>war</packaging>
-    	<artifactId>ruoyi-admin</artifactId>			
-
 
     <dependencies>
 
